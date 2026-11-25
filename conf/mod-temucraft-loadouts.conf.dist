@@ -1,0 +1,95 @@
+[worldserver]
+
+########################################
+# mod-temucraft-loadouts
+########################################
+#
+#    Temucraft.Loadouts.Enable
+#        Description: Talent loadouts: saved talent builds (talents, glyphs, action bars) that a player loads
+#                     into the active talent group, with .loadout and the Temucraft talent window's Loadouts menu.
+#        Default:     1
+
+Temucraft.Loadouts.Enable = 1
+
+#
+#    Temucraft.Loadouts.Slots
+#        Description: Loadout slots per character (1-10). Slot 1 is free, slot 2 comes with Dual Talent
+#                     Specialization (see DualSpecSlot), slots 3 and up are bought one at a time.
+#        Default:     10
+
+Temucraft.Loadouts.Slots = 10
+
+#
+#    Temucraft.Loadouts.DualSpecSlot
+#        Description: 1 = slot 2 opens when the character has Dual Talent Specialization (bought from the class
+#                     trainer as usual). 0 = slot 2 is free.
+#        Default:     1
+
+Temucraft.Loadouts.DualSpecSlot = 1
+
+#
+#    Temucraft.Loadouts.TokenItem
+#        Description: The item slots are bought with (the Temucraft Token of mod-temucraft-shop). 0 = no token price.
+#        Default:     608000
+
+Temucraft.Loadouts.TokenItem = 608000
+
+#
+#    Temucraft.Loadouts.TokenCost
+#    Temucraft.Loadouts.GoldCost
+#        Description: The price of slots 3, 4, 5, ... in Temucraft Tokens and in whole gold, separated by commas.
+#                     Slots past the end of a list cost its last value. Each slot is bought with either one; a 0
+#                     means that slot can't be bought that way; 0 in both lists makes it free. "" = not offered.
+#        Default:     "2,3,4,5,6,8,10,12"
+#                     "500,1000,1500,2000,3000,4000,5000,7500"
+
+Temucraft.Loadouts.TokenCost = "2,3,4,5,6,8,10,12"
+Temucraft.Loadouts.GoldCost = "500,1000,1500,2000,3000,4000,5000,7500"
+
+#
+#    Temucraft.Loadouts.AccountWide
+#        Description: 0 = bought slots count for the character that bought them. 1 = for every character of the
+#                     account (the saved builds stay per character). Read at login.
+#        Default:     0
+
+Temucraft.Loadouts.AccountWide = 0
+
+#
+#    Temucraft.Loadouts.SaveActions
+#    Temucraft.Loadouts.SaveGlyphs
+#        Description: Saving also stores the action bars / the glyphs, and loading puts them back. A glyph is only
+#                     put back in a socket the character has open.
+#        Default:     1
+
+Temucraft.Loadouts.SaveActions = 1
+Temucraft.Loadouts.SaveGlyphs = 1
+
+#
+#    Temucraft.Loadouts.CastTime
+#        Description: Milliseconds the player stands still before a loadout is loaded (moving, combat, casting or
+#                     dying interrupts it). 0 = at once.
+#        Default:     3000
+
+Temucraft.Loadouts.CastTime = 3000
+
+#
+#    Temucraft.Loadouts.Cooldown
+#        Description: Seconds after loading a loadout before another one can be loaded.
+#        Default:     10
+
+Temucraft.Loadouts.Cooldown = 10
+
+#
+#    Temucraft.Loadouts.MinLevel
+#        Description: Loadouts can be loaded from this level (talents start at 10). Saving works at any level.
+#        Default:     10
+
+Temucraft.Loadouts.MinLevel = 10
+
+#
+#    Temucraft.Loadouts.AllowInBattleground
+#        Description: 1 = loadouts can be loaded in a battleground or arena before it starts (never while it is
+#                     running). 0 = not in battlegrounds and arenas at all. Boss fights always refuse it.
+#        Default:     0
+
+Temucraft.Loadouts.AllowInBattleground = 0
